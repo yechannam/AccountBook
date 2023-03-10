@@ -1,3 +1,4 @@
+import 'package:account_book/widget/calendar.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -13,7 +14,6 @@ class _HomeScreenState extends State<HomeScreen> {
     return SafeArea(
       child: Scaffold(
         backgroundColor: const Color.fromARGB(255, 255, 255, 255),
-        appBar: AppBar(),
         body: Column(
           children: [
             const SizedBox(
@@ -73,7 +73,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ],
             ),
-            //list box
+            const SizedBox(
+              height: 70,
+            ),
+            const MyCalendar(),
           ],
         ),
       ),

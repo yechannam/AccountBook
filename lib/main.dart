@@ -1,4 +1,4 @@
-import 'package:account_book/screen/home.dart';
+import 'package:account_book/screen/ex.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,9 +10,9 @@ class Myapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Nexfilx',
-      home: HomeScreen(),
+    return MaterialApp(
+      title: 'woni',
+      home: TabEx(),
     );
   }
 }
